@@ -1,3 +1,21 @@
 .as-debug {
     border: 1px solid red;
 }
+.square {
+    width: calc(100% / 7);
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fizzbuzz {
+    background-color: brown;
+}
+.fizz {
+    background-color: aqua;
+}
+.buzz {
+    background-color: rgb(226, 226, 10);
+}
