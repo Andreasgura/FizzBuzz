@@ -2,9 +2,8 @@
     border: 1px solid red;
 }
 .square {
-    width: calc(100% / 7);
+    width: calc(100% / 7 - 0.5rem);
     aspect-ratio: 1 / 1;
-    padding: 10px;
     background-color: blueviolet;
     display: flex;
     justify-content: center;
