@@ -15,17 +15,28 @@ Crea un container nel DOM , aggiungendo (attraverso la funzione append()) un ele
 Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz.
 Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna.
 */
+let elBox = document.querySelector(".box")
+console.log(elBox);
+let elContainer = document.createElement('div')
+console.log(elContainer);
+elBox.append(elContainer)
+console.log(elBox)
 let print;
-for(let i=1; i<=100; i++){
-    if (i % 15 === 0) {
+let prova;
+for(let i=0; i<100; i++){
+    if ((i + 1) % 15 === 0) {
         print = "FizzBuzz"
-    }    else if (i % 3 === 0){
+    }    else if ((i + 1) % 3 === 0){
         print = "buzz"
-    } else if (i % 5 === 0){
+    } else if ((i + 1) % 5 === 0){
         print = "fizz"
     } else {
-        print = i
+        print = i+1
     }
-    console.log(print);
+    // console.log(print);
+    prova += `
+    <div>${print}</div>
+    `
 }
 
+elContainer.innerHTML = prova;
